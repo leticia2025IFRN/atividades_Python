@@ -1,6 +1,27 @@
 # Impotação dos módulos criados:
 import module.utils as utils
 import module.estatisticas as estatistica
+# Funções para formar cabeçalho e rodapé:
+def heading(n: int, text: str):
+    if n != 0:
+        repeat = int(n / 2) - int(len(text) / 1.7)
+        space = ' '
+        for i in range(0, repeat):
+            space = space + ' '
+        print('\033[1;34m=\033[0m' * n)
+        print(f'\033[1;34m{space}{text.title()}\033[0m')
+        print('\033[1;34m=\033[0m' * n)
+
+def footer(n: int, text: str):
+    if n != 0:
+        repeat = int(n / 2) - int(len(text) / 1.7)
+        space = ' '
+        for i in range(0, repeat):
+            space = space + ' '
+        print('\033[1;31m#\033[0m' * n)
+        print(f'\033[1;31m{space}{text.title()}\033[0m')
+        print('\033[1;31m#\033[0m' * n + '\n')
+
 """
 # QUESTÃO 01
 Criar um módulo chamado 'utils.py' e implemente dentro do módulo 5 funções:
@@ -12,7 +33,9 @@ Criar um módulo chamado 'utils.py' e implemente dentro do módulo 5 funções:
 Após isso, implemente um programa (main_script.py) que ofereça ao usuário um menu de funcionalidades que possibilite testar as funções do item anterior.
     > O programa deverá funcionar em looping e dar ao usuário a opção para encerrá-lo.
 """
-
+heading (60, 'QUESTÃO 01')
+# Insira o código aqui.
+footer(60, 'FIM DA QUESTÃO 01')
 """
 # QUESTÃO 02
 Criar um módulo chamado 'estatisticas.py' e implemente estas funções:
@@ -37,4 +60,6 @@ Após isso, implemente um programa principal (main_script.py) que:
         > Sair
     3. O programa deverá funcionar em looping até que o usuário escolha sair.
 """
+heading (60, 'QUESTÃO 02')
 # Insira o código aqui.
+footer(60, 'FIM DA QUESTÃO 02')
