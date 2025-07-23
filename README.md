@@ -13,5 +13,5 @@ Esses exercícios foram extraídos das atividades feitas no curso de **Tecnologi
 
 Alterno entre as versões da linguagem, utilizando tanto a **3.10.12 (disponível na minha máquina)**, quanto a **3.13.5 (instalado manualmente)**.
 
-> [!WARNING] Aviso!
+> [!WARNING]
 > A pasta "Pseudocódigos" contém arquivos .por, provenientes da linguagem Portugol, com o foco apenas de elaborar a representação algoritma de certas questões. Portanto, se não tiver um interpretador de Portugol, não rode na sua máquina!
